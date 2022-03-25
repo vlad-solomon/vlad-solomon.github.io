@@ -1,0 +1,23 @@
+.menu {
+	background-color: var(--yellow);
+	height: 100%;
+	overflow: auto;
+	&__submenu {
+		opacity: 0;
+		display: none;
+		width: 100%;
+		// outline: 1px dashed red;
+		padding: 20px 40px;
+	}
+	&__heading {
+		font-family: var(--font-face-xb);
+		font-size: 4rem;
+	}
+	&__blurb {
+		width: 320px;
+		font-size: var(--font-xs);
+		opacity: 0.5;
+		line-height: 180%;
+		margin-bottom: 50px;
+	}
+}

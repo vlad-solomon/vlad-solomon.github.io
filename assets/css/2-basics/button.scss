@@ -1,0 +1,23 @@
+.button {
+	height: 115px;
+	width: 100%;
+	display: flex;
+	padding-left: 40px;
+	align-items: center;
+	border-radius: var(--border-radius);
+	font-size: 1.5rem;
+	background-color: var(--transparent-white);
+	cursor: pointer;
+	transition: 200ms;
+	&:not(.button--selected):hover {
+		opacity: 0.9;
+	}
+	&--selected {
+		background-color: var(--white);
+		font-family: var(--font-face-b);
+		pointer-events: none;
+	}
+	&:not(:last-of-type) {
+		margin-bottom: 30px;
+	}
+}

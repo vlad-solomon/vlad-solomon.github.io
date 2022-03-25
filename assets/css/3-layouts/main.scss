@@ -1,0 +1,42 @@
+.main {
+	position: relative;
+	background-color: var(--white);
+	padding: 0 20px;
+	&__content {
+		opacity: 0;
+		display: none;
+		max-width: 900px;
+		margin: 0 auto;
+
+		p {
+			font-size: 2.25rem;
+			list-style: 185%;
+			text-align: justify;
+		}
+	}
+	&--full {
+		// outline: 1px solid red;
+		// display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	[data-section="who"] {
+		h1 {
+			max-width: 550px;
+			// outline: 2px dashed blue;
+			font-size: 8rem;
+			font-family: var(--font-face-xb);
+			line-height: 100%;
+			margin-bottom: 25px;
+		}
+		h2 {
+			margin-left: 10px;
+			font-size: 1.5rem;
+			opacity: 0.7;
+		}
+	}
+}

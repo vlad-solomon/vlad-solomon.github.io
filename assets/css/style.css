@@ -1,0 +1,289 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        -webkit-animation-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+                animation-iteration-count: 1 !important;
+        -webkit-transition-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+@font-face {
+    font-family: "Fractul ExtraBold";
+    src: url("../fonts/Fractul-ExtraBold.otf");
+}
+@font-face {
+    font-family: "Fractul Bold";
+    src: url("../fonts/Fractul-Bold.otf");
+}
+@font-face {
+    font-family: "Fractul Regular";
+    src: url("../fonts/Fractul-Regular.otf");
+}
+:root {
+    --font-xxl: 8rem;
+    --font-xl: 6rem;
+    --font-l: 4rem;
+    --font-m: 2.25rem;
+    --font-s: 1.5rem;
+    --font-xs: 0.875rem;
+    --white: #fff;
+    --transparent-white: rgba(255, 255, 255, 0.1);
+    --black: #181818;
+    --transparent-black: rgba(0, 0, 0, 0.05);
+    --yellow: #f6a21c;
+    --border-radius: 10px;
+    --border-radius-s: 5px;
+    --font-face-xb: "Fractul ExtraBold";
+    --font-face-b: "Fractul Bold";
+    --font-face-r: "Fractul Regular";
+}
+
+:root {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--yellow);
+    font-family: var(--font-face-r), "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: var(--black);
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: currentColor;
+    background-color: var(--transparent-black);
+    padding: 6px 10px 5px 10px;
+    border-radius: var(--border-radius-s);
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+a:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.button {
+    height: 115px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    background-color: var(--transparent-white);
+    cursor: pointer;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+.button:not(.button--selected):hover {
+    opacity: 0.9;
+}
+.button--selected {
+    background-color: var(--white);
+    font-family: var(--font-face-b);
+    pointer-events: none;
+}
+.button:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    background-color: var(--black);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.sidebar__icon {
+    height: 80px;
+    width: 80px;
+    border-radius: var(--border-radius-s);
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0.5;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    cursor: pointer;
+}
+.sidebar__icon:hover {
+    background-color: var(--transparent-white);
+}
+.sidebar__icon--selected {
+    pointer-events: none;
+    background-color: var(--transparent-white);
+    opacity: 1;
+}
+
+.page-content {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 120px 0px 480px 0px 1fr;
+    grid-template-columns: 120px 480px 1fr;
+    gap: 0px 0px;
+}
+
+.menu {
+    background-color: var(--yellow);
+    height: 100%;
+    overflow: auto;
+}
+.menu__submenu {
+    opacity: 0;
+    display: none;
+    width: 100%;
+    padding: 20px 40px;
+}
+.menu__heading {
+    font-family: var(--font-face-xb);
+    font-size: 4rem;
+}
+.menu__blurb {
+    width: 320px;
+    font-size: var(--font-xs);
+    opacity: 0.5;
+    line-height: 180%;
+    margin-bottom: 50px;
+}
+
+.main {
+    position: relative;
+    background-color: var(--white);
+    padding: 0 20px;
+}
+.main__content {
+    opacity: 0;
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main__content p {
+    font-size: 2.25rem;
+    list-style: 185%;
+    text-align: justify;
+}
+.main--full {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.main [data-section=who] h1 {
+    max-width: 550px;
+    font-size: 8rem;
+    font-family: var(--font-face-xb);
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+.main [data-section=who] h2 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}

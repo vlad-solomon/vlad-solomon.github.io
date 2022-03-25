@@ -1,0 +1,25 @@
+:root {
+	font-size: 16px;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: var(--yellow);
+	font-family: var(--font-face-r), "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: var(--black);
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: currentColor;
+	background-color: var(--transparent-black);
+	padding: 6px 10px 5px 10px;
+	border-radius: var(--border-radius-s);
+	transition: 200ms;
+	&:hover {
+		background-color: var(--yellow);
+		color: var(--white);
+	}
+}

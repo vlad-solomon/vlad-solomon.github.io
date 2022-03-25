@@ -5,8 +5,90 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-		<h1>website coming soon!</h1>
+		<div class="page-content">
+			<div class="sidebar">
+				<div class="sidebar__icon" data-submenu-select="about">
+					<img src="assets/img/about.svg" alt="about" />
+				</div>
+				<div class="sidebar__icon" data-submenu-select="projects">
+					<img src="assets/img/projects.svg" alt="projects" />
+				</div>
+				<div class="sidebar__icon" data-submenu-select="contact">
+					<img src="assets/img/contact.svg" alt="contact" />
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu__submenu" data-submenu="about">
+					<div class="menu__heading">About</div>
+					<div class="menu__blurb">
+						The infamous about page. You have to know who you’re hiring right? That’s why everyone has one of these! Click around so you can find out more about me and my passions.
+					</div>
+					<div class="menu__options">
+						<div class="button" data-section-select="who">Who?</div>
+						<div class="button" data-section-select="what">What?</div>
+						<div class="button" data-section-select="why">Why?</div>
+					</div>
+				</div>
+				<div class="menu__submenu" data-submenu="projects">
+					<div class="menu__heading">Projects</div>
+					<div class="menu__blurb">
+						This is the part where the portofolio speaks for itself. Up until now, all my sites and webapps where just my ideas. I designed and developed these solo to practice and
+						highthen my skills. Please, take a look!
+					</div>
+					<div class="menu__options">
+						<div class="button">/* projects get fs'ed here*/</div>
+						<div class="button">/* projects get fs'ed here*/</div>
+						<div class="button">/* projects get fs'ed here*/</div>
+					</div>
+				</div>
+				<div class="menu__submenu" data-submenu="contact">
+					<div class="menu__heading">Contact</div>
+					<div class="menu__blurb">
+						It seems I may have impressed you. You can get hold of me by the means provided here. Also, you can check out my resume and awards here. Hope we'll speak together soon!
+					</div>
+					<div class="menu__options">
+						<div class="button">contact options</div>
+						<div class="button">contact options</div>
+						<div class="button">contact options</div>
+					</div>
+				</div>
+			</div>
+			<div class="main" id="about-main">
+				<div class="main__content main--full main--name" data-section="who">
+					<div class="helper-wrapper">
+						<h1>Vlad Solomon</h1>
+						<h2>Front-end developer and UI/UX designer</h2>
+					</div>
+				</div>
+				<div class="main__content main--full" data-section="what">
+					<p>
+						Basically an unicorn. I <a href="https://github.com/vlad-solomon" target="_blank">develop</a> what I design and the other way around. I’m passionate about inventing new tools
+						and experiences for all and any. In my free time, I take <a href="https://www.instagram.com/vladsolomon_/" target="_blank">beautiful pictures</a> of landscapes and people,
+						<a href="https://www.youtube.com/channel/UCnjW0mPKyfgpNPlv9rPNnMQ" target="_blank">edit silly videos,</a> and game online.
+					</p>
+				</div>
+				<div class="main__content main--full" data-section="why">
+					<p>
+						Started playing around with HTML & CSS at 16 years old. Had a great teacher that encouraged me to keep on going. Won a few contests in high-school with my websites. After
+						high-school I started to become more ambitious and develop not only sites but web apps also. Learned JavaScript, jQuery, Node.js, Git; also experimented with some frameworks.
+						Finishing my higher education right now, I'm trying to break onto the front-end developer scene.
+					</p>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+			integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/js/app.js"></script>
 	</body>
 </html>
