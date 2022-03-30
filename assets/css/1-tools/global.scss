@@ -4,13 +4,35 @@
 
 html,
 body {
-	height: 100%;
-	background-color: var(--yellow);
+	// height: 100vh;
+	// overflow: hidden;
+	overflow-x: hidden;
+	// background-color: var(--white);
+	background-color: #efefef;
+	// background-color: red;
 	font-family: var(--font-face-r), "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	color: var(--black);
+	pointer-events: none;
+	cursor: var(--cursor-default);
 }
 
+* {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	&::selection {
+		background-color: var(--yellow);
+		color: var(--white);
+	}
+}
+
+// .page-content {
+// 	height: 100%;
+// }
+
 a {
+	white-space: nowrap;
 	position: relative;
 	text-decoration: none;
 	color: currentColor;
@@ -18,8 +40,48 @@ a {
 	padding: 6px 10px 5px 10px;
 	border-radius: var(--border-radius-s);
 	transition: 200ms;
+	cursor: var(--cursor-pointer);
 	&:hover {
 		background-color: var(--yellow);
 		color: var(--white);
+		text-decoration: underline;
 	}
+	&.big {
+		background-color: unset;
+		font-size: var(--font-l);
+		font-family: var(--font-face-xb);
+		text-align: center;
+		&:hover {
+			color: currentColor;
+		}
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+p a:hover {
+	text-decoration: none;
+}
+
+.menu::-webkit-scrollbar,
+p::-webkit-scrollbar {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.25);
 }

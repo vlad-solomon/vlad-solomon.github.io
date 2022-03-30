@@ -8,13 +8,14 @@
 		width: 100%;
 		// outline: 1px dashed red;
 		padding: 20px 40px;
+		overflow-x: hidden;
 	}
 	&__heading {
 		font-family: var(--font-face-xb);
-		font-size: 4rem;
+		font-size: var(--font-l);
 	}
 	&__blurb {
-		width: 320px;
+		max-width: 320px;
 		font-size: var(--font-xs);
 		opacity: 0.5;
 		line-height: 180%;

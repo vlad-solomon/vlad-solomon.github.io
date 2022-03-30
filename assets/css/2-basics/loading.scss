@@ -1,0 +1,29 @@
+.loading {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0%;
+	background-color: var(--yellow);
+	overflow: hidden;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--font-face-xb);
+	font-size: var(--font-xl);
+	text-transform: capitalize;
+	pointer-events: none;
+}
+
+.welcome-splash {
+	@extend .loading;
+	width: 100%;
+	z-index: 9999;
+	pointer-events: auto;
+	img {
+		transform: scale(0.8) rotate(5deg);
+		opacity: 0;
+	}
+}

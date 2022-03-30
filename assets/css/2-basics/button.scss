@@ -7,8 +7,11 @@
 	border-radius: var(--border-radius);
 	font-size: 1.5rem;
 	background-color: var(--transparent-white);
-	cursor: pointer;
+	cursor: var(--cursor-pointer);
 	transition: 200ms;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	flex-shrink: 0;
 	&:not(.button--selected):hover {
 		opacity: 0.9;
 	}
@@ -16,8 +19,7 @@
 		background-color: var(--white);
 		font-family: var(--font-face-b);
 		pointer-events: none;
-	}
-	&:not(:last-of-type) {
-		margin-bottom: 30px;
+		background-image: url("../img/button-bg.png");
+		background-size: 50%;
 	}
 }

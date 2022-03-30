@@ -4,13 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#ff0000" />
+		<meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml" />
+		<meta name="theme-color" content="#f6a21c" />
+		<title>Vlad Solomon</title>
+		<meta name="title" content="Vlad Solomon" />
+		<meta name="description" content="Front-end developer and UI/UX designer" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://vlad-solomon.github.io/" />
+		<meta property="og:title" content="Vlad Solomon" />
+		<meta property="og:description" content="Front-end developer and UI/UX designer" />
+		<meta property="og:image" content="https://raw.githubusercontent.com/vlad-solomon/vlad-solomon.github.io/876a9efb215dfc3a45e5078f36f79155f6dd82a3/assets/img/splah.svg" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://vlad-solomon.github.io/" />
+		<meta property="twitter:title" content="Vlad Solomon" />
+		<meta property="twitter:description" content="Front-end developer and UI/UX designer" />
+		<meta property="twitter:image" content="https://raw.githubusercontent.com/vlad-solomon/vlad-solomon.github.io/876a9efb215dfc3a45e5078f36f79155f6dd82a3/assets/img/splash.svg" />
 	</head>
 	<body>
+		<div class="welcome-splash">
+			<img src="assets/img/logo.svg" alt="vlad solomon logo" />
+		</div>
+		<div class="loading"></div>
 		<div class="page-content">
 			<div class="sidebar">
-				<div class="sidebar__icon" data-submenu-select="about">
+				<div class="sidebar__icon sidebar__icon--selected" data-submenu-select="about">
 					<img src="assets/img/about.svg" alt="about" />
 				</div>
 				<div class="sidebar__icon" data-submenu-select="projects">
@@ -26,37 +51,43 @@
 					<div class="menu__blurb">
 						The infamous about page. You have to know who you’re hiring right? That’s why everyone has one of these! Click around so you can find out more about me and my passions.
 					</div>
-					<div class="menu__options">
-						<div class="button" data-section-select="who">Who?</div>
-						<div class="button" data-section-select="what">What?</div>
-						<div class="button" data-section-select="why">Why?</div>
+					<div class="splide menu__options">
+						<div class="splide__track">
+							<div class="splide__list">
+								<div class="splide__slide button button--selected" data-section-select="who">Who?</div>
+								<div class="splide__slide button" data-section-select="what">What?</div>
+								<div class="splide__slide button" data-section-select="why">Why?</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="menu__submenu" data-submenu="projects">
 					<div class="menu__heading">Projects</div>
 					<div class="menu__blurb">
-						This is the part where the portofolio speaks for itself. Up until now, all my sites and webapps where just my ideas. I designed and developed these solo to practice and
-						highthen my skills. Please, take a look!
+						This is the part where the portfolio speaks for itself. Up until now, all my sites and webapps were just my ideas. I designed and developed these solo to practice and heighten
+						my skills. Please, take a look!
 					</div>
-					<div class="menu__options">
-						<div class="button">/* projects get fs'ed here*/</div>
-						<div class="button">/* projects get fs'ed here*/</div>
-						<div class="button">/* projects get fs'ed here*/</div>
+					<div class="splide menu__options">
+						<div class="splide__track">
+							<div class="splide__list"></div>
+						</div>
 					</div>
 				</div>
 				<div class="menu__submenu" data-submenu="contact">
 					<div class="menu__heading">Contact</div>
-					<div class="menu__blurb">
-						It seems I may have impressed you. You can get hold of me by the means provided here. Also, you can check out my resume and awards here. Hope we'll speak together soon!
-					</div>
-					<div class="menu__options">
-						<div class="button">contact options</div>
-						<div class="button">contact options</div>
-						<div class="button">contact options</div>
+					<div class="menu__blurb">It seems I may have impressed you. You can get hold of me by the means provided here. Also, you can check out my resume here. Hope we'll speak soon!</div>
+					<div class="splide menu__options">
+						<div class="splide__track">
+							<div class="splide__list">
+								<div class="splide__slide button" data-section-select="email">Email</div>
+								<div class="splide__slide button" data-section-select="phone">Phone</div>
+								<div class="splide__slide button" data-section-select="resume">Resume</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main" id="about-main">
+			<div class="main">
 				<div class="main__content main--full main--name" data-section="who">
 					<div class="helper-wrapper">
 						<h1>Vlad Solomon</h1>
@@ -77,18 +108,21 @@
 						Finishing my higher education right now, I'm trying to break onto the front-end developer scene.
 					</p>
 				</div>
+				<div class="main__content" data-section="project"></div>
+				<div class="main__content main--full" data-section="email">
+					<a class="big" href="mailto:vladsolomon720@gmail.com">vladsolomon720<wbr />@gmail.com</a>
+				</div>
+				<div class="main__content main--full" data-section="phone">
+					<a class="big" href="tel:0770492842">(+40) 0770 492 842</a>
+				</div>
+				<div class="main__content main--full" data-section="resume"><a class="big" href="assets/Vlad Solomon Resume.pdf" download="">Download resume</a></div>
 			</div>
 		</div>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-			integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-			crossorigin="anonymous"
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/dist/markdown-it.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+		<script src="assets/js/projects.js"></script>
 		<script src="assets/js/app.js"></script>
 	</body>
 </html>

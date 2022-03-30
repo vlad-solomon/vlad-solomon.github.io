@@ -1,0 +1,55 @@
+[data-section="project"] {
+	h1 {
+		margin-top: 90px;
+		font-family: var(--font-face-xb);
+		font-size: var(--font-xl);
+		line-height: 100%;
+	}
+	h2 {
+		font-size: var(--font-xs);
+		opacity: 0.3;
+		margin-left: 5px;
+		margin-bottom: 30px;
+		a {
+			background-color: unset;
+			padding: 0;
+			margin-left: 5px;
+			&::before {
+				content: "";
+				display: inline-block;
+				height: 5px;
+				width: 5px;
+				background-color: currentColor;
+				border-radius: var(--border-radius);
+				margin: 0 5px 2px 0;
+			}
+			&:hover {
+				color: currentColor;
+				text-decoration: underline;
+			}
+		}
+	}
+	h3 a {
+		display: block;
+		background-color: unset;
+		margin: 90px 0;
+		text-align: center;
+		font-size: var(--font-l);
+		font-family: var(--font-face-xb);
+		&:hover {
+			color: currentColor;
+		}
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	img + h2 {
+		margin-bottom: 45px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	*:not(img) {
+		user-select: text;
+	}
+}
