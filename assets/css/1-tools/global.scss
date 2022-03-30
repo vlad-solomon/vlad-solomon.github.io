@@ -4,12 +4,9 @@
 
 html,
 body {
-	// height: 100vh;
-	// overflow: hidden;
-	overflow-x: hidden;
-	// background-color: var(--white);
+	overflow: hidden;
+	// overflow-x: hidden;
 	background-color: #efefef;
-	// background-color: red;
 	font-family: var(--font-face-r), "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	color: var(--black);
 	pointer-events: none;
@@ -26,10 +23,6 @@ body {
 		color: var(--white);
 	}
 }
-
-// .page-content {
-// 	height: 100%;
-// }
 
 a {
 	white-space: nowrap;

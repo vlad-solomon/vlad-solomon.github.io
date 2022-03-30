@@ -120,7 +120,7 @@ select {
 
 html,
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #efefef;
     font-family: var(--font-face-r), "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: var(--black);
