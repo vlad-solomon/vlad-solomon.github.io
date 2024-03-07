@@ -1,12 +1,12 @@
-# Swwwatch.me
+# Swwwatch
 
-## March, 2022 [GitHub](https://github.com/vlad-solomon/swwwatch.me) [Site](https://vlad-solomon.github.io/swwwatch.me/)
+## March, 2022 [GitHub](https://github.com/vlad-solomon/swwwatch) [Site](https://vlad-solomon.github.io/swwwatch/)
 
-It seems like I've typed "grab colors from image" into Google a few too many times, only to find old and scuffed websites. This is where Swwwatch.me comes into play.
+It seems like I've typed "grab colors from image" into Google a few too many times, only to find old and scuffed websites. This is where Swwwatch comes into play.
 
 <img src="img/hero.jpeg">
 
-## Swwwatch.com's homepage
+## Swwwatch's homepage
 
 You simply copy any image - GIFs also work, no matter how you pronounce the abbreviation. You can also pan and zoom the image to make it easier to pick a color.
 
@@ -24,4 +24,4 @@ The last feature - generating a color scheme from the pasted image. The user can
 
 All in all, a very simple tool. One drawback: at the time of writing, the [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API) only works in browsers based on Chromium, so no Firefox support just yet, but I'm sure they'll add it. So, get your Google Chrome or Microsoft Edge booted up and visit the site at the link below.
 
-### [Visit Swwwatch.me](https://vlad-solomon.github.io/swwwatch.me/)
+### [Visit Swwwatch](https://vlad-solomon.github.io/swwwatch/)

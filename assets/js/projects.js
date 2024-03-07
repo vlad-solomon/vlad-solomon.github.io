@@ -1,4 +1,4 @@
-const projects = ["proton calendar", "discovero", "what's real", "swwwatch.me", "linebreak"];
+const projects = ["proton calendar", "discovero", "what's real", "swwwatch", "linebreak"];
 
 let projectButton = projects.map((project) => `<div class="splide__slide button button--project" data-load="${project}" data-section-select="project">${project}</div>`);
 $("[data-submenu='projects'] .splide__list").append(projectButton);
